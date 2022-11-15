@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>레고 1 탭 메뉴 연습</title>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'GangwonEduPowerExtraBoldA';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		.f1 {font-family: 'GangwonEduPowerExtraBoldA'; font-size:5rem ; margin: 0px; padding-left: 50px; padding-top: 35px;}
+
+		.line {border: 1px solid red;}
+		.container {position: relative;}
+		.w1{width:}
+		.ab {position: absolute;}
+		.yellowbox{ background-color: rgb(255, 211, 90);  width: 80vw; height: 150px;}
+		.cs{cursor: pointer;}
+
+		.r1{display: block; position: absolute; right: 200px; top: 0; }
+		.r2{display: block; position: absolute; right: 115px; top: 0; }
+		.r3{display: block; position: absolute; right: 0; top: 17px; }
+
+		input[type="radio"] {display: none;}
+		input[type="radio"] + label {
+			display: inline-block; 
+			padding: 20px;  
+			color:grey; 
+			font-size: 14px;
+			cursor: pointer;}
+		input[type="radio"]:checked + label {
+			background:whtie; 
+			color:black ;}
+
+		.conbox{display: none;}
+
+		input[id="tab1"]:checked ~ .con1 {display: block;}
+		input[id="tab2"]:checked ~ .con2 {display: block;}
+		input[id="tab3"]:checked ~ .con3 {display: block;}
+				
+	</style>
+</head>
+<body style="margin: 0px; background-color:rgb(255, 240, 211);">
+
+	<section>
+		<div style=" name:중앙 기본 틀; background-color:white;  width: 80vw; height: 100vh; position: absolute; left: 50%; transform: translateX(-50%)">
+
+			<div style="name: 노랑 사각형;" class="yellowbox">
+				<p class="f1">Let's build it!</p>
+
+			</div>
+
+			
+				<input type="radio" name="tabmenu" id="tab1">
+				<label for="tab1" class="r1">
+					<img src="lego7.png" style="width: 100px;">
+					<br>
+					<p style="text-align: center;">바나나</p>
+				</label>
+
+				<input type="radio" name="tabmenu" id="tab2" >
+				<label for="tab2" class="r2">
+					<img src="apple.png" style="height: 90px;">
+					<br>
+					<p style="text-align: center;">사과</p>
+				</label>
+
+				<input type="radio" name="tabmenu" id="tab3"
+				checked>
+				<label for="tab3" class="r3" >
+					<img src="car.png" style="width: 90px;">
+					<br>
+					<p style="text-align: center;">자동차</p>
+				</label>
+			
+				<div class="conbox con1">
+					<div style="padding-top: 60px; padding-bottom: 30px; left: 50%; transform: translateX(12%)">
+						<img src="lego7.png" style="width:503px; height: auto;" >
+						<img src="lego71.png" style="width:503px; height: auto;" >
+					</div>
+
+					<div style="width:100vw;" class="container">
+
+						<img src="lego1.png" style="width:114px; height: auto; left:3%;" id="lg1" class="ab cs">
+						<img src="lego1.png" style="width:114px; height: auto; left:3%;" id="lg2" class="ab cs">
+						<img src="lego1.png" style="width:114px; height: auto; left:3%;" id="lg3" class="ab cs">
+
+						<img src="lego2.png" style="width:152px; height: auto; left:12%;" id="lg4" class="ab cs">
+						<img src="lego2.png" style="width:152px; height: auto; left:12%;" id="lg5" class="ab cs">
+
+						<img src="lego3.png" style="width:152px; height: auto; left:25%;"id="lg6" class="ab cs">
+
+						<img src="lego4.png" style="width:228px; height: auto; left:36%;" id="lg7" class="ab cs">
+
+						<img src="lego5.png" style="width:228px; height: auto; left:50%;" id="lg8" class="ab cs">
+						<img src="lego5.png" style="width:228px; height: auto; left:50%;" id="lg9" class="ab cs">
+
+						<img src="lego6.png" style="width:190px; height: auto; left:66%;" id="lg10" class="ab cs"> 
+					</div>
+				
+				</div>
+					<div class="conbox con2">
+						<div style="padding-top: 60px; padding-bottom: 30px; left: 46%; transform: translateX(25%)">
+						<img src="apple.png" style="width:304px; height: auto;" >
+
+						<img src="appleg.png" style="width:304px; height: auto; padding-left: 100px;" >
+					</div>
+
+					<div style="width:100vw;" class="container">
+						<img src="apple1.png" style="width:114px; height: auto; left:1%;" id="ap1" class="ab cs">
+						<img src="apple1.png" style="width:114px; height: auto; left:1%;" id="ap2" class="ab cs">
+
+						<img src="apple2.png" style="width:152px; height: auto; left:10%;" id="ap3" class="ab cs">
+						<img src="apple2.png" style="width:152px; height: auto; left:10%;" id="ap4" class="ab cs">
+						<img src="apple2.png" style="width:152px; height: auto; left:10%;" id="ap5" class="ab cs">
+
+						<img src="apple3.png" style="width:152px; height: auto; left:22%;" id="ap6" class="ab cs">
+						<img src="apple3.png" style="width:152px; height: auto; left:22%;" id="ap7" class="ab cs">
+						<img src="apple3.png" style="width:152px; height: auto; left:22%;" id="ap8" class="ab cs">
+
+						<img src="apple4.png" style="width:228px; height: auto; left:34%;" id="ap9" class="ab cs">
+						<img src="apple4.png" style="width:228px; height: auto; left:34%;" id="ap10" class="ab cs">
+
+
+						<img src="apple5.png" style="width:228px; height: auto; left:49%;" id="ap11" class="ab cs">
+						<img src="apple5.png" style="width:228px; height: auto; left:49%;" id="ap12" class="ab cs">
+
+						<img src="apple6.png" style="width:74px; height: auto; left:60%;"id="ap13" class="ab cs">
+
+						<img src="apple7.png" style="width:74px; height: auto; left:65%;" id="ap14" class="ab cs">
+
+						<img src="apple8.png" style="width:114px; height: auto; left:70%;" id="ap15" class="ab cs">
+						
+					</div>
+					</div>	
+					<div class="conbox con3">
+						<div style="padding-top: 60px; padding-bottom: 30px; left: 50%; transform: translateX(12%)">
+							<img src="car.png" style="width:503px; height: auto;" >
+							<img src="carg.png" style="width:503px; height: auto;" >
+						</div>
+
+						<div style="width:100vw;" class="container">
+
+							<img src="car1.png" style="width:108px; height: auto; left:10%;" id="car1" class="ab cs">
+							<img src="car1.png" style="width:108px; height: auto; left:10%;" id="car2" class="ab cs">
+
+							<img src="car2.png" style="width:142px; height: auto; left:23%;" id="car3" class="ab cs">
+							<img src="car2.png" style="width:142px; height: auto; left:23%;" id="car4" class="ab cs">
+							<img src="car2.png" style="width:142px; height: auto; left:23%;" id="car5" class="ab cs">
+							<img src="car2.png" style="width:142px; height: auto; left:23%;" id="car6" class="ab cs">
+
+							<img src="car3.png" style="width:108px; height: auto; left:36%;" id="car7" class="ab cs">
+							<img src="car3.png" style="width:108px; height: auto; left:36%;" id="car8" class="ab cs">
+
+							<img src="car4.png" style="width:142px; height: auto; left:47%;" id="car9" class="ab cs">
+							<img src="car4.png" style="width:142px; height: auto; left:47%;" id="car10" class="ab cs">
+							<img src="car4.png" style="width:142px; height: auto; left:47%;" id="car11" class="ab cs">
+
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car12" class="ab cs">
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car13" class="ab cs">
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car14" class="ab cs">
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car15" class="ab cs">
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car16" class="ab cs">
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car17" class="ab cs">
+							<img src="car5.png" style="width:214px; height: auto; left:60%;" id="car18" class="ab cs">
+
+						
+					
+
+					</div>
+				
+
+			
+	
+
+		</div>
+		
+	</section>
+
+	<script type="text/javascript">
+		// lg1
+
+    lg1.onmousedown = function(event) {
+	  lg1.style.position = 'absolute';
+	  lg1.style.zIndex = 1000;
+
+	  document.body.append(lg1);
+
+	  function moveAt(pageX, pageY) {
+	    lg1.style.left = pageX - lg1.offsetWidth / 2 + 'px';
+	    lg1.style.top = pageY - lg1.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg1.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg1.onmouseup = null;
+	  };
+
+		  lg1.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+		// lg2
+
+    lg2.onmousedown = function(event) {
+	  lg2.style.position = 'absolute';
+	  lg2.style.zIndex = 1000;
+
+	  document.body.append(lg2);
+
+	  function moveAt(pageX, pageY) {
+	    lg2.style.left = pageX - lg2.offsetWidth / 2 + 'px';
+	    lg2.style.top = pageY - lg2.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg2.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg2.onmouseup = null;
+	  };
+
+		  lg2.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+	
+	// lg3
+
+    lg3.onmousedown = function(event) {
+	  lg3.style.position = 'absolute';
+	  lg3.style.zIndex = 1000;
+
+	  document.body.append(lg3);
+
+	  function moveAt(pageX, pageY) {
+	    lg3.style.left = pageX - lg3.offsetWidth / 2 + 'px';
+	    lg3.style.top = pageY - lg3.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg3.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg3.onmouseup = null;
+	  };
+
+		  lg3.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// lg4
+
+    lg4.onmousedown = function(event) {
+	  lg4.style.position = 'absolute';
+	  lg4.style.zIndex = 1000;
+
+	  document.body.append(lg4);
+
+	  function moveAt(pageX, pageY) {
+	    lg4.style.left = pageX - lg4.offsetWidth / 2 + 'px';
+	    lg4.style.top = pageY - lg4.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg4.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg4.onmouseup = null;
+	  };
+
+		  lg4.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// lg5
+
+    lg5.onmousedown = function(event) {
+	  lg5.style.position = 'absolute';
+	  lg5.style.zIndex = 1000;
+
+	  document.body.append(lg5);
+
+	  function moveAt(pageX, pageY) {
+	    lg5.style.left = pageX - lg5.offsetWidth / 2 + 'px';
+	    lg5.style.top = pageY - lg5.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg5.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg5.onmouseup = null;
+	  };
+
+		  lg5.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// lg6
+
+    lg6.onmousedown = function(event) {
+	  lg6.style.position = 'absolute';
+	  lg6.style.zIndex = 1000;
+
+	  document.body.append(lg6);
+
+	  function moveAt(pageX, pageY) {
+	    lg6.style.left = pageX - lg6.offsetWidth / 2 + 'px';
+	    lg6.style.top = pageY - lg6.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg6.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg6.onmouseup = null;
+	  };
+
+		  lg6.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// lg7
+
+    lg7.onmousedown = function(event) {
+	  lg7.style.position = 'absolute';
+	  lg7.style.zIndex = 1000;
+
+	  document.body.append(lg7);
+
+	  function moveAt(pageX, pageY) {
+	    lg7.style.left = pageX - lg7.offsetWidth / 2 + 'px';
+	    lg7.style.top = pageY - lg7.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg7.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg7.onmouseup = null;
+	  };
+
+		  lg7.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+
+	// lg8
+
+    lg8.onmousedown = function(event) {
+	  lg8.style.position = 'absolute';
+	  lg8.style.zIndex = 1000;
+
+	  document.body.append(lg8);
+
+	  function moveAt(pageX, pageY) {
+	    lg8.style.left = pageX - lg8.offsetWidth / 2 + 'px';
+	    lg8.style.top = pageY - lg8.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg8.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg8.onmouseup = null;
+	  };
+
+		  lg8.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	lg9.onmousedown = function(event) {
+	  lg9.style.position = 'absolute';
+	  lg9.style.zIndex = 1000;
+
+	  document.body.append(lg9);
+
+	  function moveAt(pageX, pageY) {
+	    lg9.style.left = pageX - lg9.offsetWidth / 2 + 'px';
+	    lg9.style.top = pageY - lg9.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg9.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg9.onmouseup = null;
+	  };
+
+		  lg9.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// lg10
+
+    lg10.onmousedown = function(event) {
+	  lg10.style.position = 'absolute';
+	  lg10.style.zIndex = 1000;
+
+	  document.body.append(lg10);
+
+	  function moveAt(pageX, pageY) {
+	    lg10.style.left = pageX - lg10.offsetWidth / 2 + 'px';
+	    lg10.style.top = pageY - lg10.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  lg10.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    lg10.onmouseup = null;
+	  };
+
+		  lg10.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+// ap1
+
+    ap1.onmousedown = function(event) {
+	  ap1.style.position = 'absolute';
+	  ap1.style.zIndex = 1000;
+
+	  document.body.append(ap1);
+
+	  function moveAt(pageX, pageY) {
+	    ap1.style.left = pageX - ap1.offsetWidth / 2 + 'px';
+	    ap1.style.top = pageY - ap1.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap1.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap1.onmouseup = null;
+	  };
+
+		  ap1.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap2
+
+    ap2.onmousedown = function(event) {
+	  ap2.style.position = 'absolute';
+	  ap2.style.zIndex = 1000;
+
+	  document.body.append(ap2);
+
+	  function moveAt(pageX, pageY) {
+	    ap2.style.left = pageX - ap2.offsetWidth / 2 + 'px';
+	    ap2.style.top = pageY - ap2.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap2.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap2.onmouseup = null;
+	  };
+
+		  ap2.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+// ap3
+
+    ap3.onmousedown = function(event) {
+	  ap3.style.position = 'absolute';
+	  ap3.style.zIndex = 1000;
+
+	  document.body.append(ap3);
+
+	  function moveAt(pageX, pageY) {
+	    ap3.style.left = pageX - ap3.offsetWidth / 2 + 'px';
+	    ap3.style.top = pageY - ap3.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap3.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap3.onmouseup = null;
+	  };
+
+		  ap3.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap4
+
+    ap4.onmousedown = function(event) {
+	  ap4.style.position = 'absolute';
+	  ap4.style.zIndex = 1000;
+
+	  document.body.append(ap4);
+
+	  function moveAt(pageX, pageY) {
+	    ap4.style.left = pageX - ap4.offsetWidth / 2 + 'px';
+	    ap4.style.top = pageY - ap4.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap4.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap4.onmouseup = null;
+	  };
+
+		  ap4.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap5
+
+    ap5.onmousedown = function(event) {
+	  ap5.style.position = 'absolute';
+	  ap5.style.zIndex = 1000;
+
+	  document.body.append(ap5);
+
+	  function moveAt(pageX, pageY) {
+	    ap5.style.left = pageX - ap5.offsetWidth / 2 + 'px';
+	    ap5.style.top = pageY - ap5.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap5.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap5.onmouseup = null;
+	  };
+
+		  ap5.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap6
+
+    ap6.onmousedown = function(event) {
+	  ap6.style.position = 'absolute';
+	  ap6.style.zIndex = 1000;
+
+	  document.body.append(ap6);
+
+	  function moveAt(pageX, pageY) {
+	    ap6.style.left = pageX - ap6.offsetWidth / 2 + 'px';
+	    ap6.style.top = pageY - ap6.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap6.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap6.onmouseup = null;
+	  };
+
+		  ap6.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap7
+
+    ap7.onmousedown = function(event) {
+	  ap7.style.position = 'absolute';
+	  ap7.style.zIndex = 1000;
+
+	  document.body.append(ap7);
+
+	  function moveAt(pageX, pageY) {
+	    ap7.style.left = pageX - ap7.offsetWidth / 2 + 'px';
+	    ap7.style.top = pageY - ap7.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap7.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap7.onmouseup = null;
+	  };
+
+		  ap7.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap8
+
+    ap8.onmousedown = function(event) {
+	  ap8.style.position = 'absolute';
+	  ap8.style.zIndex = 1000;
+
+	  document.body.append(ap8);
+
+	  function moveAt(pageX, pageY) {
+	    ap8.style.left = pageX - ap8.offsetWidth / 2 + 'px';
+	    ap8.style.top = pageY - ap8.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap8.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap8.onmouseup = null;
+	  };
+
+		  ap8.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap9
+
+    ap9.onmousedown = function(event) {
+	  ap9.style.position = 'absolute';
+	  ap9.style.zIndex = 1000;
+
+	  document.body.append(ap9);
+
+	  function moveAt(pageX, pageY) {
+	    ap9.style.left = pageX - ap9.offsetWidth / 2 + 'px';
+	    ap9.style.top = pageY - ap9.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap9.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap9.onmouseup = null;
+	  };
+
+		  ap9.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap10
+
+    ap10.onmousedown = function(event) {
+	  ap10.style.position = 'absolute';
+	  ap10.style.zIndex = 1000;
+
+	  document.body.append(ap10);
+
+	  function moveAt(pageX, pageY) {
+	    ap10.style.left = pageX - ap10.offsetWidth / 2 + 'px';
+	    ap10.style.top = pageY - ap10.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap10.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap10.onmouseup = null;
+	  };
+
+		  ap10.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+
+// ap11
+
+    ap11.onmousedown = function(event) {
+	  ap11.style.position = 'absolute';
+	  ap11.style.zIndex = 1000;
+
+	  document.body.append(ap11);
+
+	  function moveAt(pageX, pageY) {
+	    ap11.style.left = pageX - ap11.offsetWidth / 2 + 'px';
+	    ap11.style.top = pageY - ap11.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap11.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap11.onmouseup = null;
+	  };
+
+		  ap11.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+
+// ap12
+
+    ap12.onmousedown = function(event) {
+	  ap12.style.position = 'absolute';
+	  ap12.style.zIndex = 1000;
+
+	  document.body.append(ap12);
+
+	  function moveAt(pageX, pageY) {
+	    ap12.style.left = pageX - ap12.offsetWidth / 2 + 'px';
+	    ap12.style.top = pageY - ap12.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap12.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap12.onmouseup = null;
+	  };
+
+		  ap12.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap13
+
+    ap13.onmousedown = function(event) {
+	  ap13.style.position = 'absolute';
+	  ap13.style.zIndex = 1000;
+
+	  document.body.append(ap13);
+
+	  function moveAt(pageX, pageY) {
+	    ap13.style.left = pageX - ap13.offsetWidth / 2 + 'px';
+	    ap13.style.top = pageY - ap13.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap13.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap13.onmouseup = null;
+	  };
+
+		  ap13.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap14
+
+    ap14.onmousedown = function(event) {
+	  ap14.style.position = 'absolute';
+	  ap14.style.zIndex = 1000;
+
+	  document.body.append(ap14);
+
+	  function moveAt(pageX, pageY) {
+	    ap14.style.left = pageX - ap14.offsetWidth / 2 + 'px';
+	    ap14.style.top = pageY - ap14.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap14.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap14.onmouseup = null;
+	  };
+
+		  ap14.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// ap15
+
+    ap15.onmousedown = function(event) {
+	  ap15.style.position = 'absolute';
+	  ap15.style.zIndex = 1000;
+
+	  document.body.append(ap15);
+
+	  function moveAt(pageX, pageY) {
+	    ap15.style.left = pageX - ap15.offsetWidth / 2 + 'px';
+	    ap15.style.top = pageY - ap15.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  ap15.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    ap15.onmouseup = null;
+	  };
+
+		  ap15.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car1
+
+    car1.onmousedown = function(event) {
+	  car1.style.position = 'absolute';
+	  car1.style.zIndex = 1000;
+
+	  document.body.append(car1);
+
+	  function moveAt(pageX, pageY) {
+	    car1.style.left = pageX - car1.offsetWidth / 2 + 'px';
+	    car1.style.top = pageY - car1.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car1.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car1.onmouseup = null;
+	  };
+
+		  car1.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car2
+
+    car2.onmousedown = function(event) {
+	  car2.style.position = 'absolute';
+	  car2.style.zIndex = 1000;
+
+	  document.body.append(car2);
+
+	  function moveAt(pageX, pageY) {
+	    car2.style.left = pageX - car2.offsetWidth / 2 + 'px';
+	    car2.style.top = pageY - car2.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car2.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car2.onmouseup = null;
+	  };
+
+		  car2.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car3
+
+    car3.onmousedown = function(event) {
+	  car3.style.position = 'absolute';
+	  car3.style.zIndex = 1000;
+
+	  document.body.append(car3);
+
+	  function moveAt(pageX, pageY) {
+	    car3.style.left = pageX - car3.offsetWidth / 2 + 'px';
+	    car3.style.top = pageY - car3.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car3.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car3.onmouseup = null;
+	  };
+
+		  car3.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+
+	// car4
+
+    car4.onmousedown = function(event) {
+	  car4.style.position = 'absolute';
+	  car4.style.zIndex = 1000;
+
+	  document.body.append(car4);
+
+	  function moveAt(pageX, pageY) {
+	    car4.style.left = pageX - car4.offsetWidth / 2 + 'px';
+	    car4.style.top = pageY - car4.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car4.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car4.onmouseup = null;
+	  };
+
+		  car4.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car5
+
+    car5.onmousedown = function(event) {
+	  car5.style.position = 'absolute';
+	  car5.style.zIndex = 1000;
+
+	  document.body.append(car5);
+
+	  function moveAt(pageX, pageY) {
+	    car5.style.left = pageX - car5.offsetWidth / 2 + 'px';
+	    car5.style.top = pageY - car5.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car5.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car5.onmouseup = null;
+	  };
+
+		  car5.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car6
+
+    car6.onmousedown = function(event) {
+	  car6.style.position = 'absolute';
+	  car6.style.zIndex = 1000;
+
+	  document.body.append(car6);
+
+	  function moveAt(pageX, pageY) {
+	    car6.style.left = pageX - car6.offsetWidth / 2 + 'px';
+	    car6.style.top = pageY - car6.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car6.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car6.onmouseup = null;
+	  };
+
+		  car6.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car7
+
+    car7.onmousedown = function(event) {
+	  car7.style.position = 'absolute';
+	  car7.style.zIndex = 1000;
+
+	  document.body.append(car7);
+
+	  function moveAt(pageX, pageY) {
+	    car7.style.left = pageX - car7.offsetWidth / 2 + 'px';
+	    car7.style.top = pageY - car7.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car7.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car7.onmouseup = null;
+	  };
+
+		  car7.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car8
+
+    car8.onmousedown = function(event) {
+	  car8.style.position = 'absolute';
+	  car8.style.zIndex = 1000;
+
+	  document.body.append(car8);
+
+	  function moveAt(pageX, pageY) {
+	    car8.style.left = pageX - car8.offsetWidth / 2 + 'px';
+	    car8.style.top = pageY - car8.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car8.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car8.onmouseup = null;
+	  };
+
+		  car8.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car9
+
+    car9.onmousedown = function(event) {
+	  car9.style.position = 'absolute';
+	  car9.style.zIndex = 1000;
+
+	  document.body.append(car9);
+
+	  function moveAt(pageX, pageY) {
+	    car9.style.left = pageX - car9.offsetWidth / 2 + 'px';
+	    car9.style.top = pageY - car9.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car9.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car9.onmouseup = null;
+	  };
+
+		  car9.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car10
+
+    car10.onmousedown = function(event) {
+	  car10.style.position = 'absolute';
+	  car10.style.zIndex = 1000;
+
+	  document.body.append(car10);
+
+	  function moveAt(pageX, pageY) {
+	    car10.style.left = pageX - car10.offsetWidth / 2 + 'px';
+	    car10.style.top = pageY - car10.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car10.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car10.onmouseup = null;
+	  };
+
+		  car10.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car11
+
+    car11.onmousedown = function(event) {
+	  car11.style.position = 'absolute';
+	  car11.style.zIndex = 1000;
+
+	  document.body.append(car11);
+
+	  function moveAt(pageX, pageY) {
+	    car11.style.left = pageX - car11.offsetWidth / 2 + 'px';
+	    car11.style.top = pageY - car11.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car11.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car11.onmouseup = null;
+	  };
+
+		  car11.ondragstart = function() {
+		  	return false;
+			};
+			};	
+
+	// car12
+
+    car12.onmousedown = function(event) {
+	  car12.style.position = 'absolute';
+	  car12.style.zIndex = 1000;
+
+	  document.body.append(car12);
+
+	  function moveAt(pageX, pageY) {
+	    car12.style.left = pageX - car12.offsetWidth / 2 + 'px';
+	    car12.style.top = pageY - car12.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car12.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car12.onmouseup = null;
+	  };
+
+		  car12.ondragstart = function() {
+		  	return false;
+			};
+			};	
+
+	// car13
+
+    car13.onmousedown = function(event) {
+	  car13.style.position = 'absolute';
+	  car13.style.zIndex = 1000;
+
+	  document.body.append(car13);
+
+	  function moveAt(pageX, pageY) {
+	    car13.style.left = pageX - car13.offsetWidth / 2 + 'px';
+	    car13.style.top = pageY - car13.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car13.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car13.onmouseup = null;
+	  };
+
+	car13.ondragstart = function() {
+		  	return false;
+			};	
+			};	
+
+	// car14
+
+    car14.onmousedown = function(event) {
+	  car14.style.position = 'absolute';
+	  car14.style.zIndex = 1000;
+
+	  document.body.append(car14);
+
+	  function moveAt(pageX, pageY) {
+	    car14.style.left = pageX - car14.offsetWidth / 2 + 'px';
+	    car14.style.top = pageY - car14.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car14.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car14.onmouseup = null;
+	  };
+
+		  car14.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car15
+
+    car15.onmousedown = function(event) {
+	  car15.style.position = 'absolute';
+	  car15.style.zIndex = 1000;
+
+	  document.body.append(car15);
+
+	  function moveAt(pageX, pageY) {
+	    car15.style.left = pageX - car15.offsetWidth / 2 + 'px';
+	    car15.style.top = pageY - car15.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car15.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car15.onmouseup = null;
+	  };
+
+		  car15.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car16
+
+    car16.onmousedown = function(event) {
+	  car16.style.position = 'absolute';
+	  car16.style.zIndex = 1000;
+
+	  document.body.append(car16);
+
+	  function moveAt(pageX, pageY) {
+	    car16.style.left = pageX - car16.offsetWidth / 2 + 'px';
+	    car16.style.top = pageY - car16.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car16.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car16.onmouseup = null;
+	  };
+
+		  car16.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car17
+
+    car17.onmousedown = function(event) {
+	  car17.style.position = 'absolute';
+	  car17.style.zIndex = 1000;
+
+	  document.body.append(car17);
+
+	  function moveAt(pageX, pageY) {
+	    car17.style.left = pageX - car17.offsetWidth / 2 + 'px';
+	    car17.style.top = pageY - car17.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car17.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car17.onmouseup = null;
+	  };
+
+		  car17.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+
+	// car18
+
+    car18.onmousedown = function(event) {
+	  car18.style.position = 'absolute';
+	  car18.style.zIndex = 1000;
+
+	  document.body.append(car18);
+
+	  function moveAt(pageX, pageY) {
+	    car18.style.left = pageX - car18.offsetWidth / 2 + 'px';
+	    car18.style.top = pageY - car18.offsetHeight / 2 + 'px';
+	  }
+
+	  moveAt(event.pageX, event.pageY);
+
+	  function onMouseMove(event) {
+	    moveAt(event.pageX, event.pageY);
+	  }
+
+	  document.addEventListener('mousemove', onMouseMove);
+
+	  car18.onmouseup = function() {
+	    document.removeEventListener('mousemove', onMouseMove);
+	    car18.onmouseup = null;
+	  };
+
+		  car18.ondragstart = function() {
+		  	return false;
+			};
+
+	};
+	</script>
+	
+
+</body>
+</html>
